@@ -19,19 +19,23 @@
                         clifford: '#da373d',
                         primary: '#ABEF5F',
                         secondary: '#1C1C1C',
-                        bodyprimary: '#F4F4F4'
-
+                        bodyprimary: '#F4F4F4',
+                        footer_color:'#1C1C1C'
                     },
                     fontFamily: {
-                        manrope: ["Manrope", 'sans - serif']
+                        manrope: ["Manrope", 'sans - serif'],
+                    },
+                    backgroundImage: {
+                        last: "url('./assets/bg.jpg')"
                     }
+
                 }
             }
         }
     </script>
 </head>
 
-<body>
+<body class="font-manrope">
     <header>
         <!-- nav br secrion -->
         <nav class="lg:mx-20 lg:my-4">
@@ -56,7 +60,7 @@
                         <i class="fa-solid fa-magnifying-glass bg-white p-2 rounded-full shadow-xl"></i>
                         <i class="fa-solid fa-cart-shopping  bg-white p-2 rounded-full shadow-xl"></i>
                     </div>
-                    <button class="rounded-3xl bg-primary px-2 py-1 lg:py-2 flex flex-row text-sm font-bold ml-1">Book
+                    <button class=" hidden rounded-3xl bg-primary px-2 py-1 lg:py-2 lg:flex flex-row text-sm font-bold ml-1">Book
                         Consult<i
                             class="fa-solid fa-arrow-right bg-black rounded-full text-white p-1 mx-1 -rotate-45"></i>
                     </button>
@@ -192,7 +196,8 @@
                 </p>
             </div>
             <div class="grid grid-cols-1 gap-y-4 mx-3 mt-12 lg:grid-cols-4 lg:w-10/12 lg:mx-auto lg:gap-x-3 lg:gap-y-3">
-                <div class="flex flex-col lg:flex-row lg:col-span-3 bg-base-100 rounded-xl lg:items-center shadow-xl lg:px-3 lg:w-10/12 border-2 border-solid border-gray-200">
+                <div
+                    class="flex flex-col lg:flex-row lg:col-span-3 bg-base-100 rounded-xl lg:items-center shadow-xl lg:px-3 lg:w-10/12 border-2 border-solid border-gray-200">
                     <figure class="px-7 pt-10 lg:py-5">
                         <img src="./assets/img1.png" class="rounded-xl w-80" />
                     </figure>
@@ -202,9 +207,9 @@
                             Innovation meets functionality, creating spaces that
                             elevate businesses.
                         </p>
-                        <p class="font-bold space-x-2"><a href="">View Details</a><i
+                        <div class="font-bold space-x-2"><a href="">View Details</a><i
                                 class="fa-solid fa-arrow-right bg-primary rounded-full text-black p-1 mx-1 -rotate-45"></i>
-                        </p>
+                        </div>
                     </div>
                 </div>
                 <div class="card bg-base-100 lg:-ml-32 shadow-xl border-2 border-solid border-gray-200">
@@ -217,7 +222,8 @@
                         <img src="./assets/img5.png" class="rounded-xl w-80" />
                     </figure>
                 </div>
-                <div class="flex flex-col lg:flex-row lg:col-span-2 bg-base-100 rounded-xl lg:items-center shadow-xl  border-2 border-solid border-gray-200">
+                <div
+                    class="flex flex-col lg:flex-row lg:col-span-2 bg-base-100 rounded-xl lg:items-center shadow-xl  border-2 border-solid border-gray-200">
                     <figure class="px-7 pt-10 lg:py-5 lg:flex-1">
                         <img src="./assets/img4.png" class="rounded-xl w-80" />
                     </figure>
@@ -226,9 +232,9 @@
                         <p>
                             Crafting homes where comfort meets elegance, tailored to your lifestyle.
                         </p>
-                        <p class="font-bold space-x-2"><a href="">View Details</a><i
+                        <div class="font-bold space-x-2"><a href="">View Details</a><i
                                 class="fa-solid fa-arrow-right bg-primary rounded-full text-black p-1 mx-1 -rotate-45"></i>
-                        </p>
+                        </div>
                     </div>
                 </div>
                 <div class="card bg-base-100   shadow-xl border-2 border-solid border-gray-200">
@@ -238,7 +244,127 @@
                 </div>
             </div>
         </section>
+        <section class="mt-10 mx-6 lg:mx-auto lg:overflow-hidden lg:bg-bodyprimary">
+            <div class="lg:w-10/12 lg:mx-auto ">
+                <div class="text-center space-y-4 lg:pt-16">
+                    <button class="btn bg-primary bg-opacity-20 px-4 py-2 rounded-3xl text-sm font-bold">
+                        <i class="fa-solid fa-arrow-right"></i>Rinterio News
+                    </button>
+                    <h1 class="text-3xl font-bold lg:text-4xl ">Read Our Article and News</h1>
+                    <p class="lg:w-8/12 lg:mx-auto ">
+                        Even in the smallest acts of kindness, hope blooms, reminding us that good news is always just
+                        around the corner.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 gap-y-4 mt-8 lg:grid-cols-3 lg:gap-x-3 lg:py-10">
+                    <div class="shadow-2xl bg-white px-6 py-5 rounded-xl">
+                        <div class="px-3 py-2"><img class="rounded-xl" src="./assets/article1.png" alt=""></div>
+                        <div class="space-y-3 mx-2">
+                            <div class="space-x-3">
+                                <span><i class="fa-solid fa-calendar-days mr-2"></i>July14, 2024</span>
+                                <span><i class="fa-regular fa-circle-user mr-2"></i>By Admin</span>
+                            </div>
+                            <h1 class="text-xl font-bold">Sustainable Building Practices on the Rise</h1>
+                            <p class="text-gray-500 ">
+                                Construction companies are increasingly adopting eco-friendly materials and methods,
+                                leading
+                                to a surge in green buildings worldwide.
+                            </p>
+                            <div class="font-bold space-x-2"><a href="">Read More</a><i
+                                    class="fa-solid fa-arrow-right bg-primary rounded-full text-black p-1 mx-1 -rotate-45"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow-2xl bg-white px-6 py-5 rounded-xl">
+                        <div class="px-3 py-2"><img class="rounded-xl" src="./assets/article2.png" alt=""></div>
+                        <div class="space-y-3 mx-2">
+                            <div class="space-x-3">
+                                <span><i class="fa-solid fa-calendar-days mr-2"></i>July14, 2024</span>
+                                <span><i class="fa-regular fa-circle-user mr-2"></i>By Admin</span>
+                            </div>
+                            <h1 class="text-xl font-bold">High-Rise Projects Boost Urban Development</h1>
+                            <p class="text-gray-500 ">
+                                Several major construction firms have announced plans for innovative skyscrapers,
+                                promising to reshape city skylines.
+                            </p>
+                            <div class="font-bold space-x-2"><a href="">Read More</a><i
+                                    class="fa-solid fa-arrow-right bg-primary rounded-full text-black p-1 mx-1 -rotate-45"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shadow-2xl bg-white px-6 py-5 rounded-xl">
+                        <div class="px-3 py-2"><img class="rounded-xl" src="./assets/article3.png" alt=""></div>
+                        <div class="space-y-3 mx-2">
+                            <div class="space-x-3">
+                                <span><i class="fa-solid fa-calendar-days mr-2"></i>August 14, 2024</span>
+                                <span><i class="fa-regular fa-circle-user mr-2"></i>By Admin</span>
+                            </div>
+                            <h1 class="text-xl font-bold">Robotics Revolutionizing Construction Industry</h1>
+                            <p class="text-gray-500 ">
+                                Advanced robotics and automation are streamlining construction processes, reducing
+                                costs, and improving safety on job
+                                sites.
+                            </p>
+                            <div class="font-bold space-x-2"><a href="">Read More</a><i
+                                    class="fa-solid fa-arrow-right bg-primary rounded-full text-black p-1 mx-1 -rotate-45"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-16 mx-4 lg:mx-3 lg:py-20 lg:my-3 bg-opacity-10 bg-last">
+            <div class="space-y-2 text-center mb-6 lg:w-9/12 lg:mx-auto">
+                <button class="btn bg-primary bg-opacity-20 px-4 py-2 rounded-3xl text-sm font-bold">
+                    <i class="fa-solid fa-arrow-right"></i>Let’s Connect
+                </button>
+                <h1 class="text-3xl font-bold">Let’s Discuss Next Project</h1>
+                <p class="text-gray-500 pt-2 lg:w-8/12 lg:mx-auto ">
+                    Connections are the invisible threads that weave our lives together, offering support, growth,
+                    shared
+                    experiences.They bridge individuals, turning strangers.
+                </p>
+            </div>
+            <div class="grid grid-cols-1 gap-y-4 mt-12 lg:grid-cols-2 lg:gap-x-3 lg:w-9/12 lg:mx-auto">
+                <input class=" shadow-xl rounded-3xl bg-white px-4 py-5 " type="text" placeholder="First Name" name=""
+                    id="">
+                <input class=" shadow-xl rounded-3xl bg-white px-3 py-5 " type="text" placeholder="Last Name" name=""
+                    id="">
+                <input class=" shadow-xl rounded-3xl bg-white px-3 py-5 " type="text" placeholder="Email Number" name=""
+                    id="">
+                <input class=" shadow-xl rounded-3xl bg-white px-3 py-5 " type="text" placeholder="Phone Number" name=""
+                    id="">
+                <textarea class=" shadow-xl rounded-2xl bg-white px-3 py-3 h-44 lg:col-span-2 " name=""
+                    placeholder="Write your message here" id=""></textarea>
+                <button
+                    class=" text-xl font-bold rounded-3xl bg-primary py-3 flex flex-row items-center justify-center lg:py-2 lg:col-span-2">Send
+                    Mail
+                    <i class="fa-solid fa-arrow-right bg-black rounded-full text-white p-1 mx-1 -rotate-45"></i>
+                </button>
+            </div>
+        </section>
     </main>
+    <footer class="bg-footer_color text-center space-y-5 py-12 px-6">
+        <div class=" space-y-4 text-center mx-auto">
+            <a class="text-white text-3xl flex justify-center gap-x-2 font-bold"><i
+                    class="fa-solid fa-arrow-right bg-primary text-black rounded-full p-1 -rotate-45"></i>Rinterio
+            </a>
+            <p class="text-white opacity-50">
+                By embracing sustainable practices and cutting-edge technology, it paves the way for future growth. Ultimately, its
+                commitment to excellence ensures lasting structures and satisfied clients
+            </p>
+        </div>
+        <div class="grid grid-cols-1 gap-y-4 text-white">
+            <li class="list-none"><a href="">Home</a></li>
+            <li class="list-none"><a href="">Services</a></li>
+            <li class="list-none"><a href="">Portfolio</a></li>
+            <li class="list-none"><a href="">Blogs</a></li>
+            <li class="list-none"><a href="">Contact Us</a></li>
+        </div>
+        <button class=" mx-auto w-3/4 text-xl mt-5 font-bold rounded-3xl bg-primary px-6 py-3 flex flex-row items-center justify-center">Book Consult
+            <i class="fa-solid fa-arrow-right bg-black rounded-full text-white p-1 mx-1 -rotate-45"></i>
+        </button>
+    </footer>
 </body>
 
 </html>
